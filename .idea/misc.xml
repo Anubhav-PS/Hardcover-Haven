@@ -1,0 +1,49 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable-v24/dialog_choose_status_background.xml" value="0.337" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2645" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.322" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.337" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable/ic_round_manage_accounts_24.xml" value="0.3615" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable/linear_layout_bg.xml" value="0.2955" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable/linear_layout_gradient.xml" value="0.269" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/drawable/rounded_search_toolbar.xml" value="0.337" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_book_lists.xml" value="0.33" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_feature.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_home_page.xml" value="0.33" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_new_release.xml" value="0.3390625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_should_try.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_show_book.xml" value="0.33" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_sign_in.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_view_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/activity_wait_list.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/cell_front_display_books.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/cell_list_book.xml" value="0.5" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/cell_wait_list.xml" value="0.5" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/dialog_choose_status.xml" value="0.33" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/dialog_current_read_display.xml" value="0.67" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/dialog_delete_account.xml" value="0.22" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/dialog_manage_account.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/edit_contact_number_view.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/fragment_home_page.xml" value="0.41229656419529837" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/fragment_password.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/fragment_register_number.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/fragment_search.xml" value="0.33" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/layout/linear_layout_gradient.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/menu/bottom_nav_menu.xml" value="0.35625" />
+        <entry key="..\:/Users/Anubh/Documents/ProgrammingFiles/android/HardcoverHaven/app/src/main/res/menu/search_menu.xml" value="0.35625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:paddingStart="20dp"
+            android:text="Terminate Account"
+            android:textColor="@color/blue_100"
+            android:textSize="28sp"
+            tools:ignore="RtlSymmetry" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:fadeScrollbars="false"
+            android:paddingEnd="10dp"
+            android:paddingBottom="6dp"
+            android:scrollIndicators="right"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="4dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            tools:ignore="RtlSymmetry">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:justificationMode="inter_word"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="1) Before you delete your account, please note that all of your data will be permanently deleted and cannot be recovered."
+                    android:textColor="@color/text_black_1"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="2) Once you delete your account, you will no longer be able to access any of the features or services provided by our app."
+                    android:textColor="@color/text_black_1"
+                    android:textSize="16sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="3) If you have any outstanding payments or fine, you will still be responsible for paying them even after your account is deleted."
+                    android:textColor="@color/text_black_1"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="4) To ensure that you understand our terms and conditions, please type the captcha below before deleting your account."
+                    android:textColor="@color/text_black_1"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="captcha"
+                        android:textColor="#E6626161" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/dialogDeleteCaptchaTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFEEEEEE"
+                        android:text="18S569"
+                        android:textColor="#E6626161"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center_horizontal"
+                    android:hint="Enter the captcha"
+                    android:textAlignment="center"
+                    android:textColor="#E64C4C4C"
+                    android:textColorHint="#E6626161"
+                    app:boxBackgroundColor="#FFEEEEEE"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#E64C4C4C"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black">
+
+                    <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dialogDeleteCaptchaEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:maxLength="6"
+                        android:textIsSelectable="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/dialogDeleteAccountAcceptTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="I confirm that I have read and agree to abide by the terms and conditions outlined above."
+                    android:textColor="#EC4747"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/dialogDeleteAccountDeleteBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/black_100" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

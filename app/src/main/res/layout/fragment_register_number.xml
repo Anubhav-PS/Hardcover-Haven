@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerNumberFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="42dp"
+    android:paddingTop="68dp"
+    android:paddingEnd="42dp"
+    tools:context=".fragments.RegisterNumberFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:letterSpacing="0.04"
+        android:text="Hey,"
+        android:textColor="#1E1E29"
+        android:textSize="36sp"
+        android:textStyle="bold">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:letterSpacing="0.02"
+        android:text="Login Now"
+        android:textColor="#1E1E29"
+        android:textSize="36sp"
+        android:textStyle="bold">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="If you are new /"
+            android:textColor="@color/text_grey_1"
+            android:textSize="15sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/registerNumberPgeToSignUpTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/roboto"
+            android:text="Sign Up"
+            android:textColor="#1E1E29"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:text="Register number"
+            android:textColor="#45ABE4"
+            android:textSize="22sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <ProgressBar
+            android:id="@+id/registerNumberPgeProgressBar"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:indeterminateTint="#E3BF5F"
+            android:visibility="invisible">
+
+        </ProgressBar>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="Register Number"
+            app:boxBackgroundColor="@color/grey_100"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:endIconMode="clear_text"
+            app:errorIconDrawable="@null"
+            app:hintEnabled="false"
+            app:errorEnabled="false"
+            app:hintTextColor="@color/grey_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerNumberPgeRegisterEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:maxLength="10">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/registerNumberPgeProceedBtn"
+            style="@style/ForArrowTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="18dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:elevation="4dp"
+            android:src="@drawable/ic_rounded_right_arrow" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/registerNumberPgeErrorTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="90dp"
+        android:textAlignment="textEnd"
+        android:textColor="#E3BF5F">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+</LinearLayout>

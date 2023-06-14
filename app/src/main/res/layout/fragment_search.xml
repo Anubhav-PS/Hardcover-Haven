@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp"
+    tools:context=".fragments.SearchFragment">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:theme="@style/ThemeOverlay.Toolbar"
+        android:id="@+id/searchPgeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/rounded_search_toolbar"
+        android:paddingEnd="18dp"
+        app:menu="@menu/search_menu"
+        app:subtitleTextColor="@color/black"
+        app:titleTextColor="@color/text_grey_1">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/searchPgeTagWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchPgeToolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+        android:paddingEnd="22dp"
+        android:text="select a search tag to search"
+        android:textColor="@color/yellow_100"
+        android:textSize="14sp"
+        android:visibility="invisible">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/searchPgeChipGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchPgeTagWarning"
+        android:layout_marginTop="12dp"
+        android:paddingStart="4dp"
+        app:checkedChip="@id/searchPgeChipBookTitle"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:checkable="false"
+            android:text="Search tags"
+            android:textColor="@color/text_black_1"
+            android:textSize="16sp"
+            app:chipBackgroundColor="@color/white_100" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/searchPgeChipBookTitle"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Book Title" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/searchPgeChipIsbn"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISBN 13" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/searchPgeChipBookSubject"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/searchPgeChipAuthor"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author Name" />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/searchPgeViewAllTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchPgeChipGrp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        style="@style/SelectableItemBackground"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="end"
+        android:layout_marginEnd="20dp"
+        android:text="View All"
+        android:textColor="@color/blue_100"
+        android:textStyle="bold">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchPgeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchPgeViewAllTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        tools:listitem="@layout/cell_list_book">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

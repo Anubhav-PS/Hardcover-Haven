@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">hardcover haven</string>
+
+    <string name="show_book_pge_title_value">The Last Lecture</string>
+    <string name="show_book_pge_author_value">Randy Pausch</string>
+    <string name="show_book_pge_available_txt">Availability</string>
+    <string name="show_book_pge_available_value">Out Of Stock</string>
+    <string name="show_book_pge_notify_me_btn_txt">Notify Me</string>
+    <string name="show_book_pge_save_for_later_btn_txt">Save For Later</string>
+    <string name="show_book_pge_other_authors_txt">Other Authors</string>
+    <string name="show_book_pge_book_details_txt">Book Details</string>
+    <string name="show_book_pge_other_authors_value">Roger C. Dugan, Mark F. McGranaghan, and Surya Santosoh</string>
+    <string name="show_book_pge_subject_txt">Subject</string>
+    <string name="show_book_pge_subject_value">Biography</string>
+    <string name="show_book_pge_language_value">English</string>
+    <string name="show_book_pge_language_txt">Language</string>
+    <string name="show_book_pge_edition_txt">Edition</string>
+    <string name="show_book_pge_edition_value">1st</string>
+    <string name="show_book_pge_publisher_txt">Publisher</string>
+    <string name="show_book_pge_publisher_value"><![CDATA[Hodder & Stoughton]]></string>
+    <string name="show_book_pge_published_in_txt">Published In</string>
+    <string name="show_book_pge_published_in_value">2008</string>
+    <string name="show_book_pge_dds_number_txt">DDS Number</string>
+    <string name="show_book_pge_dds_number_value">2001</string>
+    <string name="show_book_pge_isbn_detail_txt">ISBN Detail</string>
+    <string name="show_book_pge_isbn_10_txt">ISBN 10</string>
+    <string name="show_book_pge_isbn10_value">1844568326</string>
+    <string name="show_book_pge_isbn13_txt">ISBN 13</string>
+    <string name="show_book_pge_isbn13_value">978-1844568321</string>
+    <string name="powered_by_fecent_bytes_txt">powered by FECent Bytes</string>
+
+
+    <string name="wait_list_pge_remove_from_wait_list_btn_txt">Remove From Wait List</string>
+
+    <string name="should_try_pge_remove_from_try_txt">Remove From Collection</string>
+</resources>

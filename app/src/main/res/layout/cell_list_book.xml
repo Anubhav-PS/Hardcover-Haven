@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:clickable="true"
+    android:background="@color/white"
+    android:id="@+id/cellListBookLinearLayout"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingStart="18dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/cellListBookCoverImg"
+        android:layout_width="94dp"
+        android:layout_height="130dp"
+        android:cropToPadding="true"
+        android:layout_gravity="center_vertical"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:src="@drawable/bookcover" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingEnd="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellListBookTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/karla"
+            android:maxLines="3"
+            android:text="The Last Lecture"
+            android:textColor="@color/text_black_1"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellListBookAuthorTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/archivo_medium"
+            android:maxLines="2"
+            android:text="Randy Pausch"
+            android:textColor="#E6646464"
+            android:textSize="14sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellListBookPublisherTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/karla"
+            android:maxLines="1"
+            android:text="The oxford publications"
+            android:textColor="#E6646464"
+            android:textSize="13sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellListBookEditionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/karla"
+            android:maxLines="1"
+            android:text="Edition - 4th"
+            android:textColor="#E6646464"
+            android:textSize="13sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F9F9"
+    android:orientation="vertical"
+    tools:context=".activities.ViewProfileActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/viewProfilePgeToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:paddingStart="4dp"
+        android:paddingTop="18dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="18dp"
+        app:elevation="8dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:elevation="0dp">
+
+            <ImageButton
+                android:id="@+id/viewProfileBackArrow"
+                style="@style/ForArrowTheme"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="View Profile"
+                android:textColor="@color/text_black_1"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewProfilePgeToolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_round_account_circle_24">
+
+            </ImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/viewProfilePgeUserNameMiddleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="Anubhav.P.Sahoo"
+                android:textColor="@color/text_black_1"
+                android:textSize="22sp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="40dp"
+                android:paddingTop="60dp"
+                android:paddingEnd="40dp"
+                android:paddingBottom="24dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/karla"
+                    android:padding="2dp"
+                    android:text="User Type"
+                    android:textColor="#E6626161"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/viewProfilePgeUserTypeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="2dp"
+                    android:text="Student"
+                    android:textColor="#E6626161"
+                    android:textSize="14sp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/darker_gray" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/karla"
+                    android:padding="2dp"
+                    android:text="User Name"
+                    android:textColor="#E6626161"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/viewProfilePgeUsernameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="2dp"
+                    android:text="Anubhav.P.Sahoo"
+                    android:textColor="#E6626161"
+                    android:textSize="14sp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/darker_gray" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/karla"
+                    android:padding="2dp"
+                    android:text="Application Number"
+                    android:textColor="#E6626161"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/viewProfilePgeApplicationIDTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="2dp"
+                    android:text="20000000"
+                    android:textColor="#E6626161"
+                    android:textSize="14sp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/darker_gray" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/karla"
+                    android:padding="2dp"
+                    android:text="Register Number"
+                    android:textColor="#E6626161"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/viewProfilePgeRegisterNumberTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="2dp"
+                    android:text="19BEE1144"
+                    android:textColor="#E6626161"
+                    android:textSize="14sp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/darker_gray" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/karla"
+                    android:padding="2dp"
+                    android:text="Contact Number"
+                    android:textColor="#E6626161"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/viewProfilePgeContactNumberTxt"
+                    style="@style/SelectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_baseline_edit_24"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif"
+                    android:padding="2dp"
+                    android:text="9150472796"
+                    android:textColor="#E6626161"
+                    android:textSize="14sp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/darker_gray" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/karla"
+                    android:padding="2dp"
+                    android:text="Email ID"
+                    android:textColor="#E6626161"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/viewProfilePgeEmailIDTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="2dp"
+                    android:text="anubhav.purusottam2019@vitstudent.ac.in"
+                    android:textColor="#E6626161"
+                    android:textSize="14sp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/darker_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:gravity="end|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ProgressBar
+                        android:id="@+id/viewProfilePgeProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="44dp"
+                        android:indeterminateTint="@color/yellow_100"
+                        android:visibility="visible" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/viewProfilePgeDeleteBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/blue_100"
+                        android:padding="14dp"
+                        android:text="Delete Account"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:cornerRadius="10dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="powered by"
+                    android:textColor="@color/text_black_1">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_feentbytes_black_logo">
+
+                </View>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
